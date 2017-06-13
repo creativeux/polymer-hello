@@ -1,0 +1,36 @@
+<link rel="import" href="bower_components/polymer/polymer-element.html">
+
+<dom-module id="as-hello-world">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[who]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `as-hello-world`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class AsHelloWorld extends Polymer.Element {
+      static get is() { return 'as-hello-world'; }
+      static get properties() {
+        return {
+          who: {
+            type: String,
+            value: 'world'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(AsHelloWorld.is, AsHelloWorld);
+  </script>
+</dom-module>
