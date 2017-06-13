@@ -1,5 +1,6 @@
 {
   "name": "as-hello-world",
+  "version": "0.0.2",
   "main": "as-hello-world.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0"
